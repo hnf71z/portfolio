@@ -1,35 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Saya</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
 </head>
 <body>
-    <header>
-        <h1>Portofolio Saya</h1>
-    </header>
-    <main>
-        <section id="about">
-            <h2>Tentang Saya</h2>
-            <p>Nama: John Doe</p>
-            <p>Skill: Web Development, Design, Programming</p>
-        </section>
-        <section id="projects">
-            <h2>Proyek Saya</h2>
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Deskripsi proyek 1.</p>
-            </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>Deskripsi proyek 2.</p>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Portofolio Saya</p>
-    </footer>
+  <header>
+    <div class="container">
+      <div class="profile">
+    
+        <h2>Hanif Abdusy</h2>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">Tentang Saya</a></li>
+          <li><a href="#projects">Proyek Saya</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- <div class="slider">
+      <div class="slide">
+        <img src="image1.jpg" alt="Gambar 1">
+      </div>
+      <div class="slide">
+        <img src="image2.jpg" alt="Gambar 2">
+      </div>
+      <div class="slide">
+        <img src="image3.jpg" alt="Gambar 3">
+      </div>
+    </div> -->
+  </header>
+  <main>
+    <section id="about" class="section">
+      <div class="container">
+        <h2>Tentang Saya</h2>
+        <img src="profile.webp" alt="Foto Profile">
+        <p>Nama: Hanif Abdusy Syakur</p>
+        <p>Nama Kampus: Politeknik Negeri Semarang </p>
+        <p>Skill: Mobile Development (Java & Kotlin)</p>
+      </div>
+    </section>
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Proyek Saya</h2>
+        <div class="projects-grid">
+          <div class="project">
+            <h3>Project 1</h3>
+            <p>Deskripsi proyek 1.</p>
+          </div>
+          <div class="project">
+            <h3>Project 2</h3>
+            <p>Deskripsi proyek 2.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Kontak</h2>
+        <p>Email: johndoe@example.com</p>
+        <p>No. Telp: +62 812-3456-789</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Portofolio Saya</p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script>
+    $('.slider').slick({
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 2000
+    });
+  </script>
 </body>
 </html>
